@@ -10,7 +10,6 @@ import design from "../public/img/design.png";
 import a from "../public/img/a.png";
 import b from "../public/img/b.png";
 import c from "../public/img/c.png";
-import d from "../public/img/d.png";
 import e from "../public/img/e.png";
 import f from "../public/img/f.png";
 import h from "../public/img/h.png";
