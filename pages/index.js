@@ -4,24 +4,23 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// Impor semua gambar dari direktori public/img
 import aa from "../public/img/aa.png";
-import code from "../public/img/code.png";
-import design from "../public/img/design.png";
-import a from "../public/img/a.png";
+import adf from "../public/img/adf.jpg";
+import ai from "../public/img/ai.png";
 import b from "../public/img/b.png";
+import bbq from "../public/img/bbq.png";
 import c from "../public/img/c.png";
+import consulting from "../public/img/consulting.png";
+import design from "../public/img/design.png";
 import e from "../public/img/e.png";
 import f from "../public/img/f.png";
+import ffq from "../public/img/ffq.png";
 import h from "../public/img/h.png";
 import i from "../public/img/i.png";
 import l from "../public/img/l.png";
-import zz from "../public/img/zz.png";
-import adf from "../public/img/adf.jpg";
-import bbq from "../public/img/bbq.png";
-import ffq from "../public/img/ffq.png";
 import qfq from "../public/img/qfq.png";
-import ai from "../public/img/ai.png";
-import consulting from "../public/img/consulting.png";
+import zz from "../public/img/zz.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -151,7 +150,7 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Pendidikan</h4>
               <p className="text-gray-800 py-1">
                 Universitas Islam Assyafiiah,
-                Jurusan: Komunikasi Penyiaran islam, 2020
+                Jurusan: Komunikasi Penyiaran Islam, 2020
                 GPA: 3.11
               </p>
               <h4 className="py-4 text-teal-600">Kontak</h4>
@@ -173,21 +172,13 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             {[
               { link: "https://www.claymorestore.shop/", src: a },
-
               { link: "https://yahootgame.c1.is/", src: bbq },
-
               { link: "https://www.agitacakes.com/", src: h },
-              {
-                link: "https://play.google.com/store/apps/details?id=com.chipmunktopup.id",
-                src: adf,
-              },
+              { link: "https://play.google.com/store/apps/details?id=com.chipmunktopup.id", src: adf },
               { link: "https://vouchergame.id/", src: qfq },
               { link: "https://hotelbumiwiyata.com/", src: i },
-
               { link: "https://wg-mothership.vercel.app/", src: e },
-
               { link: "https://arya-ai.netlify.app/", src: ai },
-
               { link: "https://tunebot.org/premium", src: ffq },
               { link: "https://pagestoremasar97.vercel.app/", src: c },
               { link: "https://aryaaaydproject.vercel.app/", src: l },
@@ -199,16 +190,15 @@ export default function Home() {
                 <Link href={item.link}>
                   <div className="hover:cursor-pointer flex justify-center items-center">
                     <Image
-                      className="rounded-lg object-cover justify-content: auto;"
-                      width={"100%"}
-                      height={"100%"}
+                      className="rounded-lg object-cover"
+                      width={400}
+                      height={300}
                       layout="responsive"
                       src={item.src}
                       alt="gambar"
                     />
                   </div>
                 </Link>
-                <br />
               </div>
             ))}
           </div>
